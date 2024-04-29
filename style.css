@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(Philosophy.png);
+    background-size: cover;
+    color: #382e1d;
+    font-family: 'Georgia';
+}
+nav {
+    top: 25px;
+    position: relative;
+    word-spacing: 5px;
+    text-align: center;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 15px 20px; /* Add padding to create space around the links */
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    padding: 5px;
+}
+
+nav ul li a {
+    font-family: 'Roboto';
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding to create space around the text */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+nav .login-btn{
+    border: none;
+    outline: none;
+    font-weight: 10px;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    position: relative;
+    top: 50px;
+    padding-left: 60px;
+    font-size: 57px;
+    font-weight: 570;
+    letter-spacing: 2px;
+}
+h2{
+    position: absolute;
+    top: 750px; /* I-adjust ayon sa layunin */
+    text-align: center;
+    color: white;
+    padding-left: 750px;
+}
+h3{
+    font-size: 15px;
+    position: relative;
+    top: 45px;
+    padding-left: 60px;
+    font-family: 'DM Sans', sans-serif; /* DM Sans font */
+    font-weight: 800;
+    color: #cd853f;
+    letter-spacing: 4px;
+}
+.dot{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    top: -4px;
+}
+p{
+    color:azure;
+    position: relative;
+    top: 35px;
+    font-family: 'DM Sans'; /* DM Sans font */
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 10;
+    word-spacing: 2px;
+}
+.button-position {
+    position: relative;
+    top: 440px;
+    padding-left: 53px;
+    
+}
+
+.square-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid lightgray; /* White border */
+    padding: 15px 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    margin: 0 10px;
+    border-radius: 4px;
+   
+}
+.square-button:hover{
+    background-color: lightgrey;
+    color: rgb(101, 67, 33); 
+}
+h2{
+    position: relative;
+    top: 150px;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+.home .wrapper-login{
+    position: relative;
+    width: 440px;
+    padding-left: 500px;
+}
+
+.wrapper-login h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.wrapper-login .input-box{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px; /* Bagay para sa medyo maliit na device */
+    width: 100%;
+    padding-left: 770px;
+    margin-top: 90px;
+}
+
+.wrapper h2 {
+    text-align: center;
+    top: 180px;
+    color: white;
+    position: absolute;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: calc(100% - 22px); /* Mag-adjust para sa icon */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.remember-forgot {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
