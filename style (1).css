@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('haha.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+
+
+
+
+.header h1 {
+
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight:600;
+    letter-spacing: 7px;
+    position: relative;
+top: 125px; /* Adjust as needed */
+}
+.header h2{
+    
+    color: white;
+    font-family: 'Catchy Mager';
+    font-size: 126px;
+    font-weight:normal;
+    letter-spacing: 12px; 
+    position: relative;
+    top: 40px;
+    
+    
+
+}
+
+.header h3 {
+    font-size: 42px;
+    margin-bottom: 100px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 110;
+    position: relative;
+    bottom: 38px;
+    letter-spacing: 4px;
+    
+}
+.button {
+    
+    background-color: white;
+    font-family: 'DM Sans';
+    color: #623E2A;
+    border: none;
+    padding: 8px 40px;
+    font-size: 10px;
+    font-weight: 900;
+    border-radius: 0; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 65px;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #623E2A;
+    transition: left 0.7s ease-in-out;
+    z-index: -1;
+}
+
+.button:hover::before {
+    left: 0;
+}
+
+.button:hover {
+    color: white;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+    overflow: hidden;
+    transition: height 1s ease; /* Smooth transition for the overlay */
+  }
+  
+  .overlay.active {
+    height: 100%; /* Expand overlay to cover the entire viewport */
+  }
+  
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Coco+Gothic&display=swap');
+h1{
+    color: rgb(224, 217, 217);
+    font-family: 'Coco Gothic';
+    
+    
+}
+.header {
+    text-align: center; /* Center align text */
+}
+
+.header h1,
+.header h2,
+.header h3,
+.header .button {
+    opacity: 0; /* Initially hide elements */
+    transform: translateY(40px); /* Initially move elements down */
+    transition: opacity 1.5s ease, transform 2s ease; /* Transition for smooth appearance */
+}
+
+
+.header h1 {
+    transition-delay: 0.2s; /* Delay for h1 */
+}
+
+.header h2 {
+    transition-delay: 0.6s; /* Delay for h2 */
+}
+
+.header h3 {
+    transition-delay: 1s; /* Delay for h3 */
+}
+
+.header .button {
+    transition-delay: 1.4s; /* Delay for button */
+}
+
+.header.show-animation h1,
+.header.show-animation h2,
+.header.show-animation h3,
+.header.show-animation .button {
+    opacity: 5; /* Show elements */
+    transform: translateY(0); /* Move elements back to their original position */
+}
+

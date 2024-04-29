@@ -1,0 +1,130 @@
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+nav {
+    top: 25px;
+    position: relative;
+    word-spacing: 5px;
+    text-align: center;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 15px 20px; /* Add padding to create space around the links */
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+}
+
+nav ul li a {
+    font-family: 'Roboto';
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding to create space around the text */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(Brown\ Modern\ Coffe\ Shop\ Presentation\ .png);
+    background-size: cover;
+    color: #382e1d;
+    font-family: 'Georgia';
+   
+}
+.welcome{
+    letter-spacing: 1px;
+    color: #cd853f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    position: relative;
+    padding-left: 690px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Lovelace Text';
+    src: url('c:\Users\acer\Desktop\lovelace\Lovelace\Zetafonts - Lovelace Text Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.message{
+    font-family: 'Lovelace Text';
+    color: white;
+    letter-spacing: 2px;
+    font-size: 60px;
+    position: relative;
+    padding-left: 620px;
+    bottom: 45px;
+    
+}
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size: 60px;
+    position: relative;
+    letter-spacing: 1px;
+    top: 15px;
+}
+@font-face {
+    font-family: 'TT Chocolates';
+    src: url('c:\Users\acer\Desktop\tt_chocolates\TT Chocolates Trial Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+p{
+    color: white;
+    position: relative;
+    padding-left: 840px;
+    padding-top: 35px;
+    font-size: 15px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: 'TT Chocolates', sans-serif;
+    font-weight: lighter;
+}
+.owner{
+    color: #cd853f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    position: relative;
+    padding-left: 840px;
+}
+.desc{
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 40px;
+    font-family: 'TT Chocolates', sans-serif;
+}
+.location{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'TT Chocolates', sans-serif;
+    position: relative;
+    right: 800px;
+    top: 50px;
+
+}
