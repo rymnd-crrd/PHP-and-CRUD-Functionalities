@@ -1,0 +1,135 @@
+
+body{
+    background-image: url(Brown\ Modern\ Coffee\ Presentation\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color:azure;
+    font-family: "Petrona", serif;
+    font-weight: 400;
+    word-spacing: 0.5;
+    white-space: pre-wrap;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+.tab-container {
+    
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+  }
+  
+  .tablink {
+    position: relative; /* Required for positioning the ::after pseudo-element */
+    color: white;
+    background-color: inherit;
+    border: none;
+    
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: color 0.3s; /* Transition color changes */
+   
+}
+.tablink:hover{
+  color: #cd853f;
+}
+.tablink::after {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Position the underline absolutely */
+    left: 50%; /* Start the underline from the center of the tablink */
+    bottom: 4px; /* Position the underline at the bottom */
+    width: 0; /* Start with no width */
+    height: 2px; /* Set the height of the underline */
+    background-color: #cd853f; /* Set the color of the underline */
+    transition: width 0.3s, left 0.3s; /* Add transition effects for width and left changes */
+    transform: translateX(-50%); /* Center the underline horizontally */
+}
+
+.tablink:hover::after {
+    width: 80%; /* Expand the underline to full width on hover */
+    
+}
+  
+  
+  .tab-content {
+    display: none;
+    padding: 20px;
+    
+  }
+  
+  .tab-content h2 {
+    font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+    letter-spacing: 1px;
+    font-size: 21px;
+
+    padding-left: 100px;
+    color:rgb(229, 231, 231);
+  }
+  
+  .tab-content p {
+    padding-left: 100px;
+    color:rgb(255, 255, 255);
+    font-family: "Amethysta", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  }
+  
+  .tab-content ul li {
+    margin-bottom: 10px;
+  }
+  .price{
+    font-family: 'Roboto';
+    color: #cd853f;
+    padding-left: 90px;
+    font-size: 20px;
+  }
+  .grid-container {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Gap between columns */
+    
+}
+
+.left-column, .center-column, .right-column {
+    
+    padding: 0;
+}
+.head {
+  margin-top:10px; /* Add margin above each heading (adjust as needed) */
+  margin-bottom: 8px; /* Add margin below each heading (adjust as needed) */
+}
+
+.des {
+  margin-top: 30px; /* Add margin above each description (adjust as needed) */
+  margin-bottom: 20px; /* Add margin below each description (adjust as needed) */
+}
+.right a{
+  color: #cd853f;
+  font-size: 40px;
+  padding-left: 1460px;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 1;
+}
+.left a{
+  color: #cd853f;
+  font-size: 40px;
+  padding-top: 20px;
+  position: fixed;
+  right: 1468px;
+  z-index: 1;
+}
+.right a:hover{
+  color: lightgray;
+}
+.left a:hover{
+  color: lightgray;
+}

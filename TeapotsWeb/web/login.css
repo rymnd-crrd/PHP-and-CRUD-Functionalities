@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+    padding: 20px;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .cancel {
+    background-color: #ff3333;
+  }
+  
+  .btn:hover, .cancel:hover {
+    opacity: 0.8;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
