@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Teapot's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.0.1/dist/ionicons.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="Coffee_Shop_logo-removebg-preview.png" alt="logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+            <li><a href="about.html"><ion-icon name="person-circle-outline"></ion-icon>About</a></li>
+            <li><a href="price.html"><ion-icon name="menu-outline"></ion-icon>Menu</a></li>
+            <li><a href="contact.html"><ion-icon name="call-outline"></ion-icon>Contact</a></li>
+            <li><a href="#"><ion-icon name="log-in-outline"></ion-icon>Login</a></li>
+        </ul>
+    </nav> 
+
+    <div class="button-position">
+        <a href="about.html">
+            <button class="square-button">About Us</button>
+        </a>
+
+        <a href="price.html">
+            <button class="square-button">Our Menu</button>
+        </a>
+    </div>
+
+    <h2>Login</h2>
+    <h1> <span class="hahaha">Start your day </span> <br> with my teapots coffee</h1>
+    <h3>MASARAP PA SAYO <span class="dot">.</span> TEAPOTS WITH LOVE</h3>
+    <p>Tikman niyo na to pag ka higop mo lasang masarap <br> sobrang sarap mo talaga teapots</p>
+
+    
+    <div class="wrapper"> 
+        <form id="login-form" action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Email" required id="email">
+                <i class='bx bxs-envelope' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" id="remember-me">Remember Me</label>
+                <a href="#">forgot Password?</a>
+            </div>
+            <button type="submit" class="btn" id="login-btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+  
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        var emailInput = document.getElementById('email');
+        var rememberMeCheckbox = document.getElementById('remember-me');
+        
+        // Validate email format
+        if (!validateEmail(emailInput.value)) {
+            event.preventDefault(); // Prevent form submission
+            alert("Invalid email format. Please enter a valid email address.");
+            return;
+        }
+
+        // Validate Remember Me checkbox
+        if (!rememberMeCheckbox.checked) {
+            event.preventDefault(); // Prevent form submission
+            alert("Please check the 'Remember Me' checkbox before logging in.");
+        }
+    });
+
+    function validateEmail(email) {
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
